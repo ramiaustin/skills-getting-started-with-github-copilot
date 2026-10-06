@@ -36,6 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
             <ul class="participants-list">
               ${participantsList}
             </ul>
+          </div
+
+        activityCard.innerHTML = `
+          <h4>${name}</h4>
+          <p>${details.description}</p>
+          <p><strong>Schedule:</strong> ${details.schedule}</p>
+          <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
+          <div class="participants-section">
+            <h5>Participants</h5>
+            <ul class="participants-list">
+              ${participantsList}
+            </ul>
           </div>
         `;
 
